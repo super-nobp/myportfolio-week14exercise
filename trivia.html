@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia / SAT Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Cool Website</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="trivia.html">Trivia</a>
+    </nav>
+
+    <div class="container">
+       
+        <aside class="left-sidebar">
+             <h3>Useful Links</h3>
+            <p><a href="https://en.ritsumei.ac.jp/" target="_blank">My University</a></p>
+            <p><a href="https://www.google.com/search?q=my+highschool&rlz=1C1HKFL_jaJP1206JP1206&oq=my+highschool&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIKCAgQABgKGBYYHjIICAkQABgWGB7SAQg0NTQ5ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8" target="_blank">My Highschool</a></p>
+            <p><a href="https://github.com" target="_blank">My Github</a></p>
+        </aside>
+
+    
+        <main>
+            <h2>SAT Score Predictor</h2>
+            <p>Estimate your SAT score based on your correct answers (max 22 per module).</p>
+            
+            <div style="margin-top: 15px; padding: 15px; background: #fafafa; border: 1px solid #ccc; max-width: 320px;">
+                <h3>Enter Correct Answers</h3>
+                
+                <p style="margin-top: 10px; font-weight: bold; color: #800000;">Reading & Writing</p>
+                <label>Module 1: <input type="number" id="rw1" placeholder="0 - 22" style="width: 100%; margin: 5px 0 10px; padding: 6px;"></label>
+                <label>Module 2: <input type="number" id="rw2" placeholder="0 - 22" style="width: 100%; margin: 5px 0 10px; padding: 6px;"></label>
+                
+                <p style="margin-top: 10px; font-weight: bold; color: #800000;">Math</p>
+                <label>Module 1: <input type="number" id="m1" placeholder="0 - 22" style="width: 100%; margin: 5px 0 10px; padding: 6px;"></label>
+                <label>Module 2: <input type="number" id="m2" placeholder="0 - 22" style="width: 100%; margin: 5px 0 10px; padding: 6px;"></label>
+                
+                <button onclick="predictSAT()" style="background: #800000; color: white; border: none; padding: 8px; width: 100%; cursor: pointer; font-weight: bold; margin-top: 10px;">Predict</button>
+                
+                <p id="result" style="margin-top: 15px; font-weight: bold;"></p>
+            </div>
+        </main>
+
+        
+        <aside class="right-sidebar">
+            <h3>Contact Me</h3>
+            <form onsubmit="alert('Message sent successfully!'); return true;">
+                <label>Name: <input type="text" required></label>
+                <label>Email: <input type="email" required></label>
+                <label>Message: <textarea required></textarea></label>
+                <button type="submit">Submit</button>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Created: July 2026 | Find me on <a href="https://github.com" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
