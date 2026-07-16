@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Cool Website</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="trivia.html">Trivia</a>
+    </nav>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar">
+            <h3>Useful Links</h3>
+            <p><a href="https://en.ritsumei.ac.jp/" target="_blank">My University</a></p>
+            <p><a href="https://www.google.com/search?q=my+highschool&rlz=1C1HKFL_jaJP1206JP1206&oq=my+highschool&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIKCAgQABgKGBYYHjIICAkQABgWGB7SAQg0NTQ5ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8" target="_blank">My Highschool</a></p>
+            <p><a href="https://github.com" target="_blank">My Github</a></p>
+        </aside>
+
+        <main>
+            <h2>My Portfolio</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Experiences</th>
+                        <th>What I gained</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Summer Exchange Program</td>
+                        <td>Made friends with people with diverse nationalities; aquired globalized mindset and thinking skills.</td>
+                        <td>May 2023</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>HTML Portfolio Page</td>
+                        <td>Drafted a basic static HTML website.</td>
+                        <td>Jun 2026</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>MUN Delegate</td>
+                        <td>Worked in a bloc to debate and address solutions regarding implentation of AI in various areas</td>
+                        <td>May 2024</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Scienctific Research Competition</td>
+                        <td>Learnt how to collaborated with a partner and organize workload.</td>
+                        <td>Jan 2024</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Github newbie</td>
+                        <td>Signing up for GIthub for the first time.</td>
+                        <td>Jul 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <h3>Contact Me</h3>
+            <form onsubmit="alert('Message sent successfully!'); return true;">
+                <label>Name: <input type="text" required></label>
+                <label>Email: <input type="email" required></label>
+                <label>Message: <textarea required></textarea></label>
+                <button type="submit">Submit</button>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Created: July 2026 | Find me on <a href="https://github.com" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
